@@ -3,3 +3,4 @@ Gemfile.local.lock
 Gemfile.lock
 .bundle
 vendor
+.envrc
