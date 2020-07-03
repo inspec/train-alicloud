@@ -10,7 +10,6 @@ require "train-alicloud/transport"
 # Because InSpec is a Spec-style test suite, we're going to use MiniTest::Spec
 # here, for familiar look and feel. However, this isn't InSpec (or RSpec) code.
 describe TrainPlugins::AliCloud::Transport do
-
   # When writing tests, you can use `let` to create variables that you
   # can reference easily.
 
@@ -22,9 +21,8 @@ describe TrainPlugins::AliCloud::Transport do
   # See https://ruby-doc.org/stdlib-2.1.0/libdoc/minitest/rdoc/MiniTest/Expectations.html
 
   describe "plugin definition" do
-
     it "should be registered with the plugin registry without the train- prefix" do
-     # Note that Train uses String keys here, not Symbols
+      # Note that Train uses String keys here, not Symbols
       _(Train::Plugins.registry.keys).wont_include("train-alicloud")
       _(Train::Plugins.registry.keys).must_include("alicloud")
     end
@@ -53,5 +51,4 @@ describe TrainPlugins::AliCloud::Transport do
       end
     end
   end
-
 end

@@ -54,7 +54,7 @@ module TrainPlugins
       def alicloud_client(api:, api_version:)
         region = @options[:region]
 
-        endpoint ||= if api == 'sts'
+        endpoint ||= if api == "sts"
                        "https://#{api}.aliyuncs.com"
                      else
                        "https://#{api}.#{region}.aliyuncs.com"
@@ -79,8 +79,8 @@ module TrainPlugins
 
       def unique_identifier
         # use alicloud account id
-        caller_identity = alicloud_client(api: 'sts', api_version: '2015-04-01').request(action: 'GetCallerIdentity')
-        caller_identity['AccountId']
+        caller_identity = alicloud_client(api: "sts", api_version: "2015-04-01").request(action: "GetCallerIdentity")
+        caller_identity["AccountId"]
       end
     end
   end

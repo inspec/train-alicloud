@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gemspec
 
 gem "train-core", "~> 3.0"
-gem 'aliyunsdkcore'
+gem "aliyunsdkcore"
 
 group :development do
   gem "pry"

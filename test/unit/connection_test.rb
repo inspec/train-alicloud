@@ -10,7 +10,6 @@ require "train-alicloud/connection"
 # Because InSpec is a Spec-style test suite, we're going to use MiniTest::Spec
 # here, for familiar look and feel. However, this isn't InSpec (or RSpec) code.
 describe TrainPlugins::AliCloud::Connection do
-
   # When writing tests, you can use `let` to create variables that you
   # can reference easily.
 
@@ -24,7 +23,6 @@ describe TrainPlugins::AliCloud::Connection do
   # See https://ruby-doc.org/stdlib-2.1.0/libdoc/minitest/rdoc/MiniTest/Expectations.html
 
   describe "connection definition" do
-
     it "should inherit from the Train Connection base" do
       # For Class, '<' means 'is a descendant of'
       _(connection_class < Train::Plugins::Transport::BaseConnection).must_equal(true)
