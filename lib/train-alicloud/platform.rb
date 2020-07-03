@@ -20,7 +20,7 @@ module TrainPlugins::AliCloud
       # of the cloud family.
 
       # This plugin defines a new platform.
-      Train::Platforms.name("ali").in_family("cloud")
+      Train::Platforms.name("alicloud").in_family("cloud")
 
       # When you know you will only ever run on your dedicated platform
       # force_platform! lets you bypass platform detection.
@@ -31,9 +31,9 @@ module TrainPlugins::AliCloud
       # version of a remote API.
       alicloud_version = Gem.loaded_specs["aliyunsdkcore"].version
       alicloud_version = "aliyunsdkcore: v#{alicloud_version}"
-      plugin_version = "train-alicloud: v#{TrainPlugins::Aws::VERSION}"
+      plugin_version = "train-alicloud: v#{TrainPlugins::AliCloud::VERSION}"
 
-      force_platform!("ali", release: "#{plugin_version}, #{alicloud_version}")
+      force_platform!("alicloud", release: "#{plugin_version}, #{alicloud_version}")
     end
   end
 end

@@ -21,11 +21,11 @@ require "train/plugins"
 require "aliyunsdkcore"
 
 module TrainPlugins
-  module Aws
+  module AliCloud
     # You must inherit from BaseConnection.
     class Connection < Train::Plugins::Transport::BaseConnection
       # We've placed platform detection in a separate module; pull it in here.
-      include TrainPlugins::Aws::Platform
+      include TrainPlugins::AliCloud::Platform
 
       def initialize(options)
         # 'options' here is a hash, Symbol-keyed,
@@ -38,7 +38,7 @@ module TrainPlugins
         # you can do with the options.
 
         # Override for any cli options
-        # ali://region
+        # alicloud://region
         options[:region] = options[:host] || options[:region]
 
         # Now let the BaseConnection have a chance to configure itself.
@@ -74,7 +74,7 @@ module TrainPlugins
 
       # TODO: determine exactly what this is used for
       def uri
-        "ali://#{@options[:region]}"
+        "alicloud://#{@options[:region]}"
       end
 
       def unique_identifier

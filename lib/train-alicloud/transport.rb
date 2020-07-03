@@ -9,9 +9,9 @@ require "aliyunsdkcore"
 require_relative "connection"
 
 module TrainPlugins
-  module Aws
+  module AliCloud
     class Transport < Train.plugin(1)
-      name "ali"
+      name "alicloud"
 
       # Pass ENV vars in using a block to `option`.  This causes `
       # option to lazy-evaluate the block to provide a default value.`
