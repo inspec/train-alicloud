@@ -39,4 +39,5 @@ Gem::Specification.new do |spec|
   # Do not list train as a dependency of a train plugin.
 
   spec.add_dependency "aliyunsdkcore", "~> 0.0.0"
+  spec.add_dependency "aliyun-sdk", "~> 0.7"
 end
