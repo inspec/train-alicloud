@@ -4,7 +4,7 @@ gemspec
 
 gem "train-core", "~> 3.0"
 gem "aliyunsdkcore"
-gem 'aliyun-sdk'
+gem "aliyun-sdk"
 
 group :development do
   gem "pry"
