@@ -1,5 +1,7 @@
 # train-alicloud - Train Plugin for connecting to AliCloud
 
+* **[Project State](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md): Prototyping**
+
 This plugin allows applications that rely on Train to communicate with the AliCloud API.  For example, InSpec uses this to perform compliance checks against AliCloud infrastructure components.
 
 The plugin is a wrapper around `aliyunsdkcore` version 0, with additional service-specific gems added where needed by the `inspec-alicloud` resource pack.
