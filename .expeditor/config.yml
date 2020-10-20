@@ -1,12 +1,20 @@
 # Documentation available at https://expeditor.chef.io/docs/getting-started/
 ---
+
+# DISABLE PIPELINE until repo is public
+# chef-oss Buildkite org does not have access to private repos
+# pipelines:
+#   - verify:
+#       description: Pull Request validation tests
+#       public: true
+
 # Slack channel in Chef Software slack to send notifications about build failures, etc
 slack:
   notify_channel: inspec-notify
 
 # This publish is triggered by the `built_in:publish_rubygems` artifact_action.
-rubygems:
-  - train-alicloud
+# rubygems:
+#   - train-alicloud
 
 github:
   # This deletes the GitHub PR branch after successfully merged into the release branch
@@ -20,8 +28,8 @@ github:
   major_bump_labels:
     - "Expeditor: Bump Version Major"
  
-changelog:
-  rollup_header: Changes not yet released to rubygems.org
+# changelog:
+#   rollup_header: Changes not yet released to rubygems.org
 
 # These actions are taken, in the order they are specified, anytime a Pull Request is merged.
 merge_actions:
@@ -40,12 +48,7 @@ merge_actions:
       only_if:
         - built_in:bump_version
 
-promote:
-  actions:
-    - built_in:rollover_changelog
-    - built_in:publish_rubygems
-
-pipelines:
-  - verify:
-      description: Pull Request validation tests
-      public: true
+# promote:
+#   actions:
+#     - built_in:rollover_changelog
+#     - built_in:publish_rubygems
