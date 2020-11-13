@@ -19,7 +19,7 @@ You will need InSpec v2.3 or later.
 Simply run:
 
 ```
-$ bundle exec inspec plugin install ../train-alicloud/
+$ bundle exec inspec plugin install train-alicloud
 ```
 
 You can then run:
