@@ -1,12 +1,9 @@
 # Documentation available at https://expeditor.chef.io/docs/getting-started/
 ---
-
-# DISABLE PIPELINE until repo is public
-# chef-oss Buildkite org does not have access to private repos
-# pipelines:
-#   - verify:
-#       description: Pull Request validation tests
-#       public: true
+pipelines:
+  - verify:
+      description: Pull Request validation tests
+      public: true
 
 # Slack channel in Chef Software slack to send notifications about build failures, etc
 slack:
