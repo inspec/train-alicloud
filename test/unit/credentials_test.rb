@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 # Because train-alicloud is an API-type plugin, and AliCloud requires credentials for
 # most operations, the plugin must handle obtaining AliCloud credentials in various ways.
 
