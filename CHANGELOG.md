@@ -1,9 +1,17 @@
 # CHANGELOG
 
-<!-- latest_release -->
+<!-- latest_release 1.0.0 -->
+## [v1.0.0](https://github.com/inspec/train-alicloud/tree/v1.0.0) (2021-12-21)
+
+#### Merged Pull Requests
+- Fix activesupport pin for Ruby &lt;2.7 [#13](https://github.com/inspec/train-alicloud/pull/13) ([jonlives](https://github.com/jonlives))
 <!-- latest_release -->
 
-<!-- release_rollup -->
+<!-- release_rollup since=0.0.4 -->
+### Changes not yet released to rubygems.org
+
+#### Merged Pull Requests
+- Fix activesupport pin for Ruby &lt;2.7 [#13](https://github.com/inspec/train-alicloud/pull/13) ([jonlives](https://github.com/jonlives)) <!-- 1.0.0 -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
