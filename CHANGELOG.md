@@ -1,9 +1,17 @@
 # CHANGELOG
 
-<!-- latest_release -->
+<!-- latest_release 1.0.1 -->
+## [v1.0.1](https://github.com/inspec/train-alicloud/tree/v1.0.1) (2023-12-06)
+
+#### Merged Pull Requests
+- Upgrade to GitHub-native Dependabot [#9](https://github.com/inspec/train-alicloud/pull/9) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
 <!-- latest_release -->
 
-<!-- release_rollup -->
+<!-- release_rollup since=1.0.0 -->
+### Changes not yet released to rubygems.org
+
+#### Merged Pull Requests
+- Upgrade to GitHub-native Dependabot [#9](https://github.com/inspec/train-alicloud/pull/9) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 1.0.1 -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
